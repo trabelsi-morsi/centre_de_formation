@@ -1,3 +1,7 @@
+<?php session_start();
+include "secure.php";
+
+?>
 <!doctype html>
 <!--[if lte IE 9]> <html class="lte-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
@@ -103,55 +107,15 @@
                 
                 <div class="uk-navbar-flip">
                     <ul class="uk-navbar-nav user_actions">
-                        <li><a href="#" id="full_screen_toggle" class="user_action_icon uk-visible-large"><i class="material-icons md-24 md-light">&#xE5D0;</i></a></li>
-                        <li><a href="#" id="main_search_btn" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE8B6;</i></a></li>
-                        <li data-uk-dropdown="{mode:'click',pos:'bottom-right'}">
-                            <a href="#" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE7F4;</i><span class="uk-badge">16</span></a>
+                        
                             <div class="uk-dropdown uk-dropdown-xlarge">
                                 <div class="md-card-content">
-                                    <ul class="uk-tab uk-tab-grid" data-uk-tab="{connect:'#header_alerts',animation:'slide-horizontal'}">
-                                        <li class="uk-width-1-2 uk-active"><a href="#" class="js-uk-prevent uk-text-small">Messages (12)</a></li>
-                                        <li class="uk-width-1-2"><a href="#" class="js-uk-prevent uk-text-small">Alerts (4)</a></li>
-                                    </ul>
+                                    
                                     <ul id="header_alerts" class="uk-switcher uk-margin">
                                         <li>
                                             <ul class="md-list md-list-addon">
-                                                <li>
-                                                    <div class="md-list-addon-element">
-                                                        <span class="md-user-letters md-bg-cyan">di</span>
-                                                    </div>
-                                                    <div class="md-list-content">
-                                                        <span class="md-list-heading"><a href="pages_mailbox.html">Voluptate neque tempore.</a></span>
-                                                        <span class="uk-text-small uk-text-muted">Est velit culpa consequatur possimus delectus ratione ex rerum sint quo.</span>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="md-list-addon-element">
-                                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_07_tn.png" alt=""/>
-                                                    </div>
-                                                    <div class="md-list-content">
-                                                        <span class="md-list-heading"><a href="pages_mailbox.html">Praesentium quidem voluptas.</a></span>
-                                                        <span class="uk-text-small uk-text-muted">Ab enim quia voluptas illo vel commodi.</span>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="md-list-addon-element">
-                                                        <span class="md-user-letters md-bg-light-green">vj</span>
-                                                    </div>
-                                                    <div class="md-list-content">
-                                                        <span class="md-list-heading"><a href="pages_mailbox.html">Maiores quae.</a></span>
-                                                        <span class="uk-text-small uk-text-muted">Dolores sequi cumque repellat itaque at itaque exercitationem hic dolorem eligendi enim.</span>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="md-list-addon-element">
-                                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_02_tn.png" alt=""/>
-                                                    </div>
-                                                    <div class="md-list-content">
-                                                        <span class="md-list-heading"><a href="pages_mailbox.html">Autem recusandae in.</a></span>
-                                                        <span class="uk-text-small uk-text-muted">Odio magni possimus iure velit deleniti eos qui laborum aut.</span>
-                                                    </div>
-                                                </li>
+                                             
+                                                
                                                 <li>
                                                     <div class="md-list-addon-element">
                                                         <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_09_tn.png" alt=""/>
@@ -181,29 +145,9 @@
                                                     <div class="md-list-addon-element">
                                                         <i class="md-list-addon-icon material-icons uk-text-success">&#xE88F;</i>
                                                     </div>
-                                                    <div class="md-list-content">
-                                                        <span class="md-list-heading">Aut sequi dolorum.</span>
-                                                        <span class="uk-text-small uk-text-muted uk-text-truncate">Sit dolor error sunt odit deleniti.</span>
-                                                    </div>
+                                                    
                                                 </li>
-                                                <li>
-                                                    <div class="md-list-addon-element">
-                                                        <i class="md-list-addon-icon material-icons uk-text-danger">&#xE001;</i>
-                                                    </div>
-                                                    <div class="md-list-content">
-                                                        <span class="md-list-heading">Est nihil.</span>
-                                                        <span class="uk-text-small uk-text-muted uk-text-truncate">Quam et alias harum autem quisquam dolores officiis.</span>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="md-list-addon-element">
-                                                        <i class="md-list-addon-icon material-icons uk-text-primary">&#xE8FD;</i>
-                                                    </div>
-                                                    <div class="md-list-content">
-                                                        <span class="md-list-heading">Unde voluptatibus quisquam.</span>
-                                                        <span class="uk-text-small uk-text-muted uk-text-truncate">Ut rerum corporis nostrum animi sed ad ut.</span>
-                                                    </div>
-                                                </li>
+                                                
                                             </ul>
                                         </li>
                                     </ul>
@@ -212,11 +156,18 @@
                         </li>
                         <li data-uk-dropdown="{mode:'click',pos:'bottom-right'}">
                             <a href="#" class="user_action_image"><img class="md-user-image" src="assets/img/avatars/avatar_11_tn.png" alt=""/></a>
-                            <div class="uk-dropdown uk-dropdown-small">
+
+                            <div class="uk-dropdown uk-dropdown-small uk-dropdown-flip">
                                 <ul class="uk-nav js-uk-prevent">
-                                    <li><a href="page_user_profile.html">My profile</a></li>
-                                    <li><a href="page_settings.html">Settings</a></li>
-                                    <li><a href="login.html">Logout</a></li>
+                                    <li><a href="#"> 
+                                    <span   style=" " class="menu_icon uk-icon-user-secret">  <?php echo  $_SESSION['login']; ?></span>
+                                    
+                                    </a></li>
+                                   
+                                    <li><a href="login.php?controller=admin&action=logout">
+                                            <span   style=" " class="menu_icon uk-icon-user-times">   Logout</span>
+                                            </a>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
@@ -235,16 +186,12 @@
     <!-- main sidebar -->
     <aside id="sidebar_main">
         
-        <div class="sidebar_main_header">
-            <div class="sidebar_logo">
-                <a href="index.html" class="sSidebar_hide"><img src="assets/img/logo_main.png" alt="" height="15" width="71"/></a>
-                <a href="index.html" class="sSidebar_show"><img src="assets/img/logo_main_small.png" alt="" height="32" width="32"/></a>
-            </div>
-            <div class="sidebar_actions">
-                <select id="lang_switcher" name="lang_switcher">
-                    <option value="gb" selected>English</option>
-                </select>
-            </div>
+        <div style="height: initial;" class="sidebar_main_header">
+            <center>
+                <a href="index.php" class="sSidebar_hide"><img style="margin-bottom:20px;  " src="images/logo.png" alt="" height="150" width="171"/></a>
+               
+            </center>
+            
         </div>
         
         <div class="menu_section">
@@ -285,23 +232,35 @@
 
                  <li>
                     <a href="#">
-                        <span class="menu_icon"><i class="material-icons">&#xE926;</i></span>
+                        <span class="menu_icon"><i class="material-icons">local_atm </i></span>
                         <span class="menu_title">Paiement</span>
                     </a>
                     <ul>
-                        <li><a href="forms_regular.html">Paiement formateur</a></li>
-                        <li><a href="forms_advanced.html">Réglement etudiant</a></li>
+                        <li><a href="index.php?controller=paiement_formateur&action=affich">Paiement formateur</a></li>
+                        <li><a href="index.php?controller=reglement_etudiant&action=affich">Réglement etudiant</a></li>
                     </ul>
                 </li>
 
                 <li>
                     <a href="#">
-                        <span class="menu_icon"><i class="material-icons">&#xE543;</i></span>
+                        <span  class="menu_icon"><i class="material-icons">&#xE543;</i></span>
                         <span class="menu_title">Salle</span>
                     </a>
                     <ul>
                         <li><a href="forms_regular.html">Ajout</a></li>
                         <li><a href="forms_advanced.html">Modification</a></li>
+                    </ul>
+                </li>
+                <br> <br>
+                 <li>
+                    <a href="#">
+                        <span    class="menu_icon uk-icon-user"></span>
+                        Administrateurs
+                    </a>
+                    <ul>
+                        <li><a href="index.php?controller=admin&action=ajout1">Ajouter un Administrateur</a></li>
+                        <li><a href="index.php?controller=admin&action=affich">Afficher les Administrateurs</a></li>
+                        
                     </ul>
                 </li>
                
