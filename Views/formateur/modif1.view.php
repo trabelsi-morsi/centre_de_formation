@@ -71,7 +71,7 @@
                             </div><br/>
                             <div class="uk-input-group">
                                         <span class="uk-input-group-addon"><i style="color: #e02631; "  class="uk-input-group-icon uk-icon-calendar"></i></span>
-                                        <div class="md-input-wrapper"><label for="uk_dp_1">Date de naissance</label><input value="<?php echo $tab[0]->date_naiss; ?>" name='date_naiss' class="md-input" type="text" id="uk_dp_1" data-uk-datepicker="{format:'YYYY-MM-DD'}"><span class="md-input-bar"></span></div>
+                                        <div class="md-input-wrapper"><label for="uk_dp_1"></label><input value="<?php echo $tab[0]->date_naiss; ?>" name='date_naiss' class="md-input" type="text" id="uk_dp_1" data-uk-datepicker="{format:'YYYY-MM-DD'}"><span class="md-input-bar"></span></div>
                                         
                                     </div>
                         <div class="uk-width-1-1">

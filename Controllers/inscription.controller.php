@@ -44,8 +44,8 @@ include "Models/groupe.class.php";
 	 	$remise=$_REQUEST['remise'];
 
 //récuperation des valeurs des attributs de l’objet etudiant
-	 if(isset($_REQUEST['id_formateur']))
-	 	$id_formateur=$_REQUEST['id_formateur'];	 
+	 if(isset($_REQUEST['id_etdd']))
+	 	$id_etdd=$_REQUEST['id_etdd'];	 
 
 	 if(isset($_REQUEST['cin']))
 	 	$cin=$_REQUEST['cin'];
@@ -68,8 +68,7 @@ include "Models/groupe.class.php";
 	 if(isset($_REQUEST['date_naiss']))
 	 	$date_naiss=$_REQUEST['date_naiss'];
 
-	 if(isset($_REQUEST['fraisheure']))
-	 	$fraisheure=$_REQUEST['fraisheure'];
+	 
 
 //récuperation des valeurs des attributs de l’objet groupe
 
@@ -104,7 +103,7 @@ include "Models/groupe.class.php";
 							include "Views//inscription/ajout1.view.php"; Break;
 			Case 'ajout'  : $v->add($cnx);   Break;
 
-			Case 'modif1' : $tab=$v->detail($cnx); 
+			Case 'modif1' : $tableau=$v->detail($cnx); 
 						    $variable=$m->liste($cnx); 
 						    $variable2=$g->liste($cnx); 
 						    include "Views//inscription/modif1.view.php"; Break;
