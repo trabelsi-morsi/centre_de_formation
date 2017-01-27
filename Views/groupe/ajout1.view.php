@@ -33,7 +33,7 @@
                                                               
                                                                         foreach ($variable2 as $res) {
 
-                                                                            echo ' <OPTION value="'.$res->id_formateur.'"> '.$res->nom.'</OPTION> ' ;
+                                                                            echo ' <OPTION value="'.$res->id_formateur.'"> '.$res->nom.' '.$res->prenom.'</OPTION> ' ;
                                                                 }
                                                                ?>
                                                       </select> 

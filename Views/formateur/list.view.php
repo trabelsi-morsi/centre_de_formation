@@ -24,11 +24,21 @@
                                             </div>
                                              <div class="uk-form-row" style=" width: 50%; margin-left: 15%; padding-top: 32px; ">
                                   <button type="submit" style="float:right;" value='Rechercher' class="md-btn md-btn-primary">Rechercher</button>
+                                  <div class="uk-form-row" style="float:right;  margin-left: 50%; font-size:14px;">
+<a href="index.php?controller=formateur&action=excel&type= <?php echo $type; ?>" > <img src='images/excel.png' width="40px" height="40px"></a>
+<a href="index.php?controller=formateur&action=pdf&type= <?php echo $type; ?>"><img src='images/pdf.png' width="40px" height="40px"></a>
+                                    </div>
+                                  
+<div style="float:right; margin-top: -32px; margin-left: 50%; font-size:14px;">
+
+                                    </div>
                                 </div>
+
+                                 
                                             </div>
                                             </div>
                                             </form>
-
+                                            
 
 
 

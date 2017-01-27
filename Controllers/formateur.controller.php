@@ -97,6 +97,11 @@ include "Models/type.class.php";
 			Case 'affichtype' : if($type!=0) {$tab=$v->listetype($cnx,$type);   $tab2=$v->liste($cnx);}
 									else {$tab=$v->liste($cnx);  $tab2=$v->liste($cnx);}
 							 include "Views//formateur/list.view.php"; Break;
+
+			Case "excel": 	if($type!=0) {$res=$v->listetype($cnx,$type); }
+									else {$res=$v->liste($cnx);  }		
+			
+			include "Views/formateur/excel.view.php";			Break;
 			
 
 		}	 

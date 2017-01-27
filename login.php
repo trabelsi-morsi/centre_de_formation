@@ -44,7 +44,7 @@ $action=$_REQUEST['action'];
         <div class="md-card" id="login_card">
             <div class="md-card-content large-padding" id="login_form">
                 <div class="login_heading">
-                    <div style="background-image: url(images/logo-ConvertImage.png);  width: 150px;
+                    <div style="background-image: url(images/logo.png);  width: 150px;
     height: 150px;   background-position: 50% 50%; " class="user_avatar"></div>
                 </div>
                 <?php
@@ -72,7 +72,7 @@ $action=$_REQUEST['action'];
             </div>
         </div>
         <div class="uk-margin-top">
-            <a href="#" id="login_help_show">Need help?</a>
+           
         </div>
     </div>
 

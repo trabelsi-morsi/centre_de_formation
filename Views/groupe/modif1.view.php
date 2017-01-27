@@ -43,7 +43,7 @@
                                                                                 
                                                                         }
 
-                                                                            echo " <OPTION ".$selected." value='".$res->id_formateur."'> ".$res->nom."</OPTION> " ;
+                                                                            echo " <OPTION ".$selected." value='".$res->id_formateur."'> ".$res->nom." ".$res->prenom."</OPTION> " ;
                                                         
                                                                     }
                                                                    ?>

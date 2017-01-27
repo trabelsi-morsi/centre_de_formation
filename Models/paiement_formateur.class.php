@@ -66,7 +66,7 @@ class paiement_formateur
 
 	public function liste($cnx)
 	{
-		$req=$cnx->prepare("SELECT * FROM paiement_formateur p , groupe g where p.id_grp=p.id_grp ");
+		$req=$cnx->prepare("SELECT * FROM paiement_formateur p , groupe g where p.id_grp=g.id_grp ");
 		$req->execute();
 		$rows=$req->fetchAll(PDO::FETCH_OBJ);
 		return $rows;
