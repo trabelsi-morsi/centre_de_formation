@@ -64,7 +64,7 @@
                             </div>
                             You can also use
                             <div class="uk-form-file uk-text-primary">text<input id="form-file" name="photo" type="file"></div>.
-                            <img src='img/<?php echo $tab->photo;?>' width=70px height=50px/></br></br>
+                            <img src='images/<?php echo $tab->photo;?>' width=70px height=50px/></br></br>
                    			<div class="uk-grid">
                             <div class="uk-width-1-1">
                                 <input type="submit" class="md-btn md-btn-primary" value="Submit">

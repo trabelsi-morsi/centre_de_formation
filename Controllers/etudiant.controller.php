@@ -1,7 +1,7 @@
 <?php
 include "Models/etudiant.class.php";
 
-
+ 
 //initialisation des attributs de l’objet
 	 // parametre etudiant
 
@@ -66,7 +66,7 @@ include "Models/etudiant.class.php";
 							{
 								$v->setPhoto($pic);
 								$v->edit($cnx); Break;
-							}else {$v->edit($cnx);}
+							}else {$v->edit($cnx);Break;}
 			
 			Case 'supp'   : $v->delete($cnx); Break;
 			

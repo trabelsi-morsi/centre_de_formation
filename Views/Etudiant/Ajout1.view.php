@@ -1,4 +1,4 @@
-<div id="page_content_inner"> 
+<div id="page_content_inner">  
 <div class="md-card">
 <div class="md-card-content large-padding">
                     <form id="form_validation" class="uk-form-stacked" method="POST" enctype="multipart/form-data" action="index.php?controller=etudiant&action=ajout" >

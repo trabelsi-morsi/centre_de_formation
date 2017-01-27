@@ -31,9 +31,7 @@
                                     
                                 </div>
                             </div>
- <?php
- print_r($variable);
- print_r($tab[0]);?>
+
                             <div class="uk-width-medium-1-2">
                                 <div class="uk-form-row">
                                 
@@ -49,13 +47,13 @@
                                                    $selected="selected";
                                                 }
 
-                                             echo " <OPTION ".$selected. "value='".$res2->id_ins."'> ".$res2->nom." " .$res2->prenom." (".$res2->des_grp.") </OPTION> " ;
+                                             echo " <OPTION ".$selected. " value='".$res2->id_ins."'> ".$res2->nom." " .$res2->prenom." (".$res2->des_grp.") </OPTION> " ;
                                             }
                                           ?>
                                  </select> 
                            </div>
                     </div>
-                     <br><br>
+                     <br><br><br>
                         <div class="uk-grid">
                             <div class="uk-width-1-1">
                                 <input type="submit" class="md-btn md-btn-primary" value="Submit">

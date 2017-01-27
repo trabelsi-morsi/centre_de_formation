@@ -286,11 +286,22 @@
                  <li>
                     <a href="#">
                         <span class="menu_icon"><i class="material-icons">&#xE926;</i></span>
+                        <span class="menu_title">Inscription</span>
+                    </a>
+                    <ul>
+                        <li><a href="index.php?controller=paiement_formateur&action=affich">Paiement formateur</a></li>
+                        <li><a href="index.php?controller=reglement_etudiant&action=affich">Réglement etudiant</a></li>
+                    </ul>
+                </li>
+
+                 <li>
+                    <a href="#">
+                        <span class="menu_icon"><i class="material-icons">&#xE926;</i></span>
                         <span class="menu_title">Paiement</span>
                     </a>
                     <ul>
-                        <li><a href="forms_regular.html">Paiement formateur</a></li>
-                        <li><a href="forms_advanced.html">Réglement etudiant</a></li>
+                        <li><a href="index.php?controller=paiement_formateur&action=affich">Paiement formateur</a></li>
+                        <li><a href="index.php?controller=reglement_etudiant&action=affich">Réglement etudiant</a></li>
                     </ul>
                 </li>
 
@@ -300,8 +311,19 @@
                         <span class="menu_title">Salle</span>
                     </a>
                     <ul>
-                        <li><a href="forms_regular.html">Ajout</a></li>
-                        <li><a href="forms_advanced.html">Modification</a></li>
+                        <li><a href="index.php?controller=salle&action=affich">Liste</a></li>
+                        <li><a href="index.php?controller=salle&action=ajout1">Ajout</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="menu_icon"><i class="material-icons">&#xE865;</i></span>
+                        <span class="menu_title">Diplome</span>
+                    </a>
+                    <ul>
+                        <li><a href="index.php?controller=diplome&action=affich">Liste</a></li>
+                        <li><a href="index.php?controller=diplome&action=ajout1">Ajout</a></li>
                     </ul>
                 </li>
                

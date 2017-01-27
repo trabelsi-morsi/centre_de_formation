@@ -52,8 +52,8 @@ foreach ($tab as $key )
 	echo "<td>".$key->date_naiss."</td>";
 	echo "<td>".$key->mail."</td>";
 	echo "<td>".$key->tel."</td>";
-	echo "<td><img src='img/".$key->photo."' width=70px height=50px/></td>";
-	echo '<td><a class="md-fab md-fab-success" href="index.php?controller=etudiant&action=modif1&id_etd='.$key->id_etd.'" id="invoice_add">
+	echo "<td><img src='images/".$key->photo."' width=70px height=50px/></td>";
+	echo '<td><a class="md-fab md-fab-success" href="index.php?controller=etudiant&action=modif1&id_etd='.$key->id_etd.'" id="invoice_add" >
             <i class="material-icons">&#xE150;</i>
         </a></td>'.
 	
